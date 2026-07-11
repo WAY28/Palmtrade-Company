@@ -18,9 +18,13 @@ export default function Footer() {
   ]
 
   return (
-    <footer className="bg-brand-darker text-white">
+    <footer className="bg-brand-darker text-white relative overflow-hidden">
+      {/* Gradient accent bar */}
+      <div className="h-1 bg-gradient-to-r from-brand-green via-brand-yellow to-brand-green" />
+      <div className="glow-orb w-80 h-80 bg-brand-green/10 -bottom-24 -left-24" />
+
       {/* Main footer */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-16">
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Brand */}
           <div className="lg:col-span-2">

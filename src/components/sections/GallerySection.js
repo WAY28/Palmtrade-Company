@@ -5,6 +5,7 @@ import { useTranslations, useLocale } from 'next-intl'
 import Link from 'next/link'
 import Image from 'next/image'
 import { ArrowRight, X, ZoomIn, ImageOff } from 'lucide-react'
+import Reveal from '@/components/ui/Reveal'
 
 export default function GallerySection({ images = [], standalone = false }) {
   const t = useTranslations('gallery')
@@ -25,11 +26,12 @@ export default function GallerySection({ images = [], standalone = false }) {
     <section id="gallery" className="section-padding bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         {!standalone && (
-          <div className="text-center mb-12">
+          <Reveal direction="up" className="text-center mb-12">
             <div className="badge-pill w-fit mx-auto">{t('badge')}</div>
             <h2 className="font-display text-3xl sm:text-4xl font-bold text-brand-dark mb-4">{t('title')}</h2>
+            <div className="accent-line mx-auto mb-4" />
             <p className="text-gray-500 max-w-xl mx-auto">{t('subtitle')}</p>
-          </div>
+          </Reveal>
         )}
 
         {images.length > 0 && (
@@ -56,8 +58,9 @@ export default function GallerySection({ images = [], standalone = false }) {
         ) : (
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
             {(standalone ? filtered : filtered.slice(0, 6)).map((img, i) => (
-              <button key={img.id || i} onClick={() => setLightbox(img)}
-                className="group relative rounded-2xl overflow-hidden aspect-square bg-gray-100 hover:shadow-xl transition-all">
+              <Reveal key={img.id || i} direction="zoom" delay={Math.min(i % 3, 2) * 0.08}>
+              <button onClick={() => setLightbox(img)}
+                className="group relative w-full rounded-2xl overflow-hidden aspect-square bg-gray-100 hover:shadow-xl transition-all duration-300">
                 <Image src={img.image_url} alt={img.caption_en || img.caption_id || ''} fill
                   className="object-cover group-hover:scale-105 transition-transform duration-500" />
                 <div className="absolute inset-0 bg-brand-darker/0 group-hover:bg-brand-darker/50 transition-all flex items-center justify-center">
@@ -69,17 +72,18 @@ export default function GallerySection({ images = [], standalone = false }) {
                   </div>
                 )}
               </button>
+              </Reveal>
             ))}
           </div>
         )}
 
         {!standalone && images.length > 0 && (
-          <div className="text-center mt-8">
+          <Reveal direction="up" className="text-center mt-8">
             <Link href={`/${locale}/gallery`}
-              className="inline-flex items-center gap-2 border-2 border-brand-green text-brand-dark font-semibold px-7 py-3 rounded-full hover:bg-brand-green transition-all text-sm">
+              className="inline-flex items-center gap-2 border-2 border-brand-green text-brand-dark font-semibold px-7 py-3 rounded-full hover:bg-brand-green btn-press text-sm">
               <ArrowRight size={15} /> See All Photos
             </Link>
-          </div>
+          </Reveal>
         )}
       </div>
 

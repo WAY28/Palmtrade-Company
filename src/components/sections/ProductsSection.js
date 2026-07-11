@@ -6,6 +6,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { FileText, Phone, ArrowRight, CheckCircle2, Package } from 'lucide-react'
 import { placeholder, getWhatsAppLink } from '@/lib/utils'
+import Reveal from '@/components/ui/Reveal'
 
 const FLAG_MAP = { Thailand: '🇹🇭', China: '🇨🇳', India: '🇮🇳' }
 const COLOR_MAP = {
@@ -57,14 +58,15 @@ export default function ProductsSection({ products = [] }) {
     <section id="products" className="section-padding bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         {/* Header */}
-        <div className="text-center mb-12">
+        <Reveal direction="up" className="text-center mb-12">
           <div className="badge-pill w-fit mx-auto">{t('badge')}</div>
           <h2 className="font-display text-3xl sm:text-4xl font-bold text-brand-dark mb-4">{t('title')}</h2>
+          <div className="accent-line mx-auto mb-4" />
           <p className="text-gray-500 max-w-2xl mx-auto">{t('subtitle')}</p>
-        </div>
+        </Reveal>
 
         {/* Market tabs */}
-        <div className="flex flex-wrap justify-center gap-3 mb-10">
+        <Reveal direction="up" delay={0.1} className="flex flex-wrap justify-center gap-3 mb-10">
           {products.map((product, i) => (
             <button key={product.id || i} onClick={() => setActive(i)}
               className={`flex items-center gap-2 px-6 py-3 rounded-full font-semibold text-sm transition-all ${
@@ -76,10 +78,10 @@ export default function ProductsSection({ products = [] }) {
               {product.market}
             </button>
           ))}
-        </div>
+        </Reveal>
 
         {/* Product detail */}
-        <div className="grid lg:grid-cols-2 gap-10 bg-white rounded-3xl overflow-hidden shadow-sm border border-gray-100">
+        <Reveal direction="up" delay={0.15} className="grid lg:grid-cols-2 gap-10 bg-white rounded-3xl overflow-hidden shadow-sm border border-gray-100">
           {/* Image */}
           <div className="relative aspect-[4/3] lg:aspect-auto lg:min-h-[400px]">
             <Image
@@ -131,16 +133,16 @@ export default function ProductsSection({ products = [] }) {
             <div className="flex flex-wrap gap-3 mt-auto">
               <a href={getWhatsAppLink(`Hello, I'm interested in coconut supply for ${current.market} market`)}
                 target="_blank" rel="noopener noreferrer"
-                className="flex-1 bg-brand-green text-brand-dark font-bold px-5 py-3 rounded-full text-sm text-center hover:bg-brand-yellow transition-all flex items-center justify-center gap-2">
+                className="flex-1 bg-brand-green text-brand-dark font-bold px-5 py-3 rounded-full text-sm text-center hover:bg-brand-yellow btn-press flex items-center justify-center gap-2">
                 <Phone size={15} /> {t('ctaContact')}
               </a>
               <Link href={`/${locale}/products/${current.id}`}
-                className="border-2 border-brand-green text-brand-dark font-semibold px-5 py-3 rounded-full text-sm hover:bg-brand-green transition-all flex items-center gap-2">
+                className="border-2 border-brand-green text-brand-dark font-semibold px-5 py-3 rounded-full text-sm hover:bg-brand-green btn-press flex items-center gap-2">
                 <ArrowRight size={15} /> Detail
               </Link>
             </div>
           </div>
-        </div>
+        </Reveal>
       </div>
     </section>
   )

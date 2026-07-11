@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { createAdminClient } from '@/lib/supabaseServer'
 import { placeholder, getWhatsAppLink } from '@/lib/utils'
 import { ArrowRight, Phone, Package } from 'lucide-react'
+import Reveal from '@/components/ui/Reveal'
 
 export const revalidate = 60
 export const metadata = { title: 'Products | PT Palm Trade Company' }
@@ -28,10 +29,11 @@ export default async function ProductsPage({ params }) {
           <Image src={placeholder(1920, 600, 'Coconut+Products')} alt="" fill className="object-cover opacity-20" />
           <div className="absolute inset-0 bg-gradient-to-r from-brand-darker/90 to-transparent" />
         </div>
+        <div className="glow-orb w-96 h-96 bg-brand-green/15 -top-24 -right-24" />
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 text-center">
-          <div className="badge-pill w-fit mx-auto">{t('badge')}</div>
-          <h1 className="font-display text-4xl sm:text-5xl font-bold text-white mt-2">{t('title')}</h1>
-          <p className="text-gray-400 mt-4 max-w-xl mx-auto">{t('subtitle')}</p>
+          <div className="badge-pill w-fit mx-auto anim-rise">{t('badge')}</div>
+          <h1 className="font-display text-4xl sm:text-5xl font-bold text-white mt-2 anim-rise anim-delay-1">{t('title')}</h1>
+          <p className="text-gray-400 mt-4 max-w-xl mx-auto anim-rise anim-delay-2">{t('subtitle')}</p>
         </div>
       </section>
 
@@ -46,8 +48,9 @@ export default async function ProductsPage({ params }) {
             </div>
           ) : (
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {products.map((product) => (
-                <div key={product.id} className="bg-white rounded-3xl overflow-hidden border border-gray-100 hover:shadow-xl transition-all group flex flex-col">
+              {products.map((product, i) => (
+                <Reveal key={product.id} direction="up" delay={Math.min(i % 3, 2) * 0.1}>
+                <div className="bg-white rounded-3xl overflow-hidden border border-gray-100 card-hover group flex flex-col h-full">
                   {/* Image */}
                   <Link href={`/${locale}/products/${product.id}`} className="block relative aspect-[4/3] overflow-hidden">
                     <Image
@@ -101,6 +104,7 @@ export default async function ProductsPage({ params }) {
                     </div>
                   </div>
                 </div>
+                </Reveal>
               ))}
             </div>
           )}

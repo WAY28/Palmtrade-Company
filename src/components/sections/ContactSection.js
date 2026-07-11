@@ -4,6 +4,7 @@ import { useState } from 'react'
 import { useTranslations, useLocale } from 'next-intl'
 import { Phone, Mail, MapPin, Send, CheckCircle2, MessageSquare } from 'lucide-react'
 import { getWhatsAppLink } from '@/lib/utils'
+import Reveal from '@/components/ui/Reveal'
 
 export default function ContactSection({ standalone = false }) {
   const t = useTranslations('contact')
@@ -42,13 +43,14 @@ export default function ContactSection({ standalone = false }) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="grid lg:grid-cols-2 gap-14 items-start">
           {/* Left info */}
-          <div>
+          <Reveal direction="left">
             {!standalone && (
               <>
                 <div className="badge-pill w-fit">{t('badge')}</div>
                 <h2 className="font-display text-3xl sm:text-4xl font-bold text-white mb-4">
                   {t('title')}
                 </h2>
+                <div className="accent-line mb-6" />
                 <p className="text-gray-400 mb-10 leading-relaxed">{t('subtitle')}</p>
               </>
             )}
@@ -103,10 +105,10 @@ export default function ContactSection({ standalone = false }) {
                 </div>
               </div>
             </div>
-          </div>
+          </Reveal>
 
           {/* Right form */}
-          <div className="bg-white rounded-3xl p-8">
+          <Reveal direction="right" delay={0.1} className="bg-white rounded-3xl p-8">
             {status === 'success' ? (
               <div className="text-center py-12">
                 <CheckCircle2 size={56} className="text-brand-green mx-auto mb-4" />
@@ -209,7 +211,7 @@ export default function ContactSection({ standalone = false }) {
                 </button>
               </form>
             )}
-          </div>
+          </Reveal>
         </div>
       </div>
     </section>

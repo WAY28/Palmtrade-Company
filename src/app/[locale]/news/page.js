@@ -28,10 +28,11 @@ export default async function NewsPage({ params }) {
         <div className="absolute inset-0 opacity-20">
           <Image src={placeholder(1920, 600, 'News+Hero')} alt="" fill className="object-cover" />
         </div>
+        <div className="glow-orb w-96 h-96 bg-brand-green/15 -top-24 -right-24" />
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 text-center">
-          <div className="badge-pill w-fit mx-auto">{t('badge')}</div>
-          <h1 className="font-display text-4xl sm:text-5xl font-bold text-white mt-2">{t('title')}</h1>
-          <p className="text-gray-400 mt-4 max-w-xl mx-auto">{t('subtitle')}</p>
+          <div className="badge-pill w-fit mx-auto anim-rise">{t('badge')}</div>
+          <h1 className="font-display text-4xl sm:text-5xl font-bold text-white mt-2 anim-rise anim-delay-1">{t('title')}</h1>
+          <p className="text-gray-400 mt-4 max-w-xl mx-auto anim-rise anim-delay-2">{t('subtitle')}</p>
         </div>
       </section>
 

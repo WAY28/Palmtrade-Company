@@ -3,6 +3,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { ArrowRight, Calendar, Newspaper } from 'lucide-react'
 import { placeholder, formatDate, truncate } from '@/lib/utils'
+import Reveal from '@/components/ui/Reveal'
 
 export default function NewsSection({ posts = [] }) {
   const t = useTranslations('news')
@@ -12,10 +13,11 @@ export default function NewsSection({ posts = [] }) {
   return (
     <section id="news" className="section-padding bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
-        <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-12">
+        <Reveal direction="up" className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-12">
           <div>
             <div className="badge-pill w-fit">{t('badge')}</div>
-            <h2 className="font-display text-3xl sm:text-4xl font-bold text-brand-dark">{t('title')}</h2>
+            <h2 className="font-display text-3xl sm:text-4xl font-bold text-brand-dark mb-3">{t('title')}</h2>
+            <div className="accent-line" />
           </div>
           {posts.length > 0 && (
             <Link href={`/${locale}/news`}
@@ -23,7 +25,7 @@ export default function NewsSection({ posts = [] }) {
               {tCommon('seeAll')} <ArrowRight size={15} />
             </Link>
           )}
-        </div>
+        </Reveal>
 
         {posts.length === 0 ? (
           <div className="flex flex-col items-center justify-center py-20 text-gray-400">
@@ -33,11 +35,12 @@ export default function NewsSection({ posts = [] }) {
           </div>
         ) : (
           <div className="grid md:grid-cols-3 gap-6">
-            {posts.slice(0, 3).map((post) => {
+            {posts.slice(0, 3).map((post, i) => {
               const title = locale === 'id' ? post.title_id : post.title_en
               const excerpt = locale === 'id' ? post.excerpt_id : post.excerpt_en
               return (
-                <Link key={post.id} href={`/${locale}/news/${post.slug}`}
+                <Reveal key={post.id} direction="up" delay={i * 0.1}>
+                <Link href={`/${locale}/news/${post.slug}`}
                   className="group bg-white rounded-2xl overflow-hidden border border-gray-100 card-hover block">
                   <div className="relative aspect-video overflow-hidden">
                     <Image src={post.image_url || placeholder(600, 400, 'News')} alt={title} fill
@@ -58,6 +61,7 @@ export default function NewsSection({ posts = [] }) {
                     </span>
                   </div>
                 </Link>
+                </Reveal>
               )
             })}
           </div>
