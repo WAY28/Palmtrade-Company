@@ -68,10 +68,6 @@ export default function Navbar() {
 
         <div className="hidden lg:flex items-center gap-3">
           <LanguageSwitcher scrolled={scrolled} />
-          <Link href={`/${locale}/contact`} prefetch={true}
-            className="bg-brand-green text-brand-dark text-sm font-semibold px-5 py-2.5 rounded-full hover:bg-brand-yellow transition-colors">
-            Get Quote
-          </Link>
         </div>
 
         <button className={`lg:hidden p-2 rounded-md ${scrolled ? 'text-brand-dark' : 'text-white'}`}
@@ -92,12 +88,8 @@ export default function Navbar() {
                 {link.label}
               </Link>
             ))}
-            <div className="pt-3 border-t border-gray-100 mt-2 flex items-center justify-between">
+            <div className="pt-3 border-t border-gray-100 mt-2">
               <LanguageSwitcher scrolled={true} />
-              <Link href={`/${locale}/contact`} onClick={() => setMenuOpen(false)}
-                className="bg-brand-green text-brand-dark text-sm font-semibold px-5 py-2 rounded-full">
-                Get Quote
-              </Link>
             </div>
           </nav>
         </div>
