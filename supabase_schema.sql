@@ -1,5 +1,5 @@
 -- ============================================================
--- PT PALM TRADE COMPANY - Supabase Schema (FINAL)
+-- PT PUTRI PALMA NUSANTARA - Supabase Schema (FINAL)
 -- Aman dijalankan berkali-kali, tidak akan error
 -- ============================================================
 
@@ -193,9 +193,9 @@ END $$;
 
 INSERT INTO site_settings (key, value) VALUES
   ('wa_number',          '6282293807717'),
-  ('wa_message',         'Halo, saya ingin menanyakan produk kelapa PT Palm Trade Company.'),
+  ('wa_message',         'Halo, saya ingin menanyakan produk kelapa PT Putri Palma Nusantara.'),
   ('wa_show',            'true'),
-  ('company_name',       'PT Palm Trade Company'),
+  ('company_name',       'PT Putri Palma Nusantara'),
   ('company_tagline_id', 'Eksportir Kelapa Semi Husked Terpercaya'),
   ('company_tagline_en', 'Trusted Semi Husked Coconut Exporter'),
   ('hero_stat1_value',   '2,800+'),

@@ -6,7 +6,7 @@ import { createAdminClient } from '@/lib/supabaseServer'
 import { placeholder, formatDate, truncate } from '@/lib/utils'
 
 export const revalidate = 60
-export const metadata = { title: 'News | PT Palm Trade Company' }
+export const metadata = { title: 'News | PT Putri Palma Nusantara' }
 
 export default async function NewsPage({ params }) {
   const { locale } = await params

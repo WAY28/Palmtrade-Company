@@ -7,7 +7,7 @@ import { ArrowRight, Phone, Package } from 'lucide-react'
 import Reveal from '@/components/ui/Reveal'
 
 export const revalidate = 60
-export const metadata = { title: 'Products | PT Palm Trade Company' }
+export const metadata = { title: 'Products | PT Putri Palma Nusantara' }
 
 const FLAG_MAP = { Thailand: '🇹🇭', China: '🇨🇳', India: '🇮🇳' }
 

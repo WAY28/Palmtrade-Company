@@ -46,9 +46,9 @@ export default function Navbar() {
           </div>
           <div>
             <span className={`font-display font-bold text-lg leading-none block ${scrolled ? 'text-brand-dark' : 'text-white'}`}>
-              Palm Trade
+              Putri Palma
             </span>
-            <span className="text-[10px] text-brand-green font-medium tracking-wider uppercase leading-none">Company</span>
+            <span className="text-[10px] text-brand-green font-medium tracking-wider uppercase leading-none">Nusantara</span>
           </div>
         </Link>
 

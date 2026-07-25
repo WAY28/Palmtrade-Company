@@ -5,7 +5,7 @@ import Image from 'next/image'
 import { createAdminClient } from '@/lib/supabaseServer'
 import { placeholder } from '@/lib/utils'
 
-export const metadata = { title: 'Our Team | PT Palm Trade Company' }
+export const metadata = { title: 'Our Team | PT Putri Palma Nusantara' }
 
 export default async function TeamPage() {
   const t = await getTranslations('team')

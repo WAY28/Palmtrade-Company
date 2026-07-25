@@ -15,7 +15,7 @@ export async function generateMetadata({ params }) {
   const { id, locale } = await params
   const supabase = createAdminClient()
   const { data } = await supabase.from('products').select('market').eq('id', id).single()
-  return { title: data ? `${data.market} Coconut | PT Palm Trade Company` : 'Product Detail' }
+  return { title: data ? `${data.market} Coconut | PT Putri Palma Nusantara` : 'Product Detail' }
 }
 
 const FLAG_MAP = { Thailand: '🇹🇭', China: '🇨🇳', India: '🇮🇳' }
@@ -142,6 +142,26 @@ export default async function ProductDetailPage({ params }) {
                   </div>
                 </div>
               )}
+
+              {/* Detail Information */}
+              <div className="mb-8">
+                <h2 className="font-semibold text-brand-dark text-sm uppercase tracking-wider mb-3">
+                  {t('detailInfoTitle')}
+                </h2>
+                <div className="rounded-2xl border border-gray-100 overflow-hidden">
+                  {[
+                    [t('moqLabel'), t('moqValue')],
+                    [t('paymentLabel'), t('paymentValue')],
+                    [t('shipmentLabel'), t('shipmentValue')],
+                    [t('specCapacity'), product.capacity],
+                  ].filter(([, v]) => v).map(([label, value], i) => (
+                    <div key={label} className={`flex items-center justify-between gap-4 px-4 py-2.5 text-sm ${i % 2 === 0 ? 'bg-gray-50' : ''}`}>
+                      <span className="text-gray-500">{label}</span>
+                      <span className="text-brand-dark font-semibold text-right">{value}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
 
               {/* CTA */}
               <div className="flex flex-col sm:flex-row gap-3 mt-auto">

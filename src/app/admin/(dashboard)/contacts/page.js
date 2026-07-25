@@ -164,7 +164,7 @@ export default function AdminContactsPage() {
             </div>
 
             <div className="flex gap-3 pt-2">
-              <a href={`mailto:${viewing.email}?subject=Re: Palm Trade Company Inquiry`}
+              <a href={`mailto:${viewing.email}?subject=Re: Putri Palma Nusantara Inquiry`}
                 className="flex-1 flex items-center justify-center gap-2 bg-brand-green text-brand-dark font-semibold py-2.5 rounded-full text-sm hover:bg-brand-yellow transition-all">
                 <Mail size={14} /> Reply via Email
               </a>

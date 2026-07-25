@@ -48,7 +48,7 @@ export default function AdminLoginPage() {
             <div className="w-14 h-14 rounded-2xl bg-[#a4dc4a] flex items-center justify-center mb-4 shadow-lg shadow-[#a4dc4a]/20">
               <Leaf size={26} className="text-[#1a2e05]" />
             </div>
-            <h1 className="text-white text-xl font-bold tracking-tight">Palm Trade Admin</h1>
+            <h1 className="text-white text-xl font-bold tracking-tight">Putri Palma Admin</h1>
             <p className="text-gray-400 text-sm mt-1">Masuk ke panel manajemen</p>
           </div>
           <form onSubmit={handleSubmit} className="flex flex-col gap-4">
@@ -61,7 +61,7 @@ export default function AdminLoginPage() {
             <div>
               <label className="block text-xs text-gray-400 uppercase tracking-wider mb-2">Email</label>
               <input type="email" value={email} onChange={(e) => setEmail(e.target.value)}
-                placeholder="admin@palmtrade.com" required
+                placeholder="admin@putripalmanusantara.com" required
                 className="w-full bg-white/5 border border-white/10 text-white placeholder-gray-600 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-[#a4dc4a]/50 transition-all" />
             </div>
             <div>
@@ -81,7 +81,7 @@ export default function AdminLoginPage() {
               {loading ? <><Loader2 size={16} className="animate-spin" /> Masuk...</> : 'Masuk ke Dashboard'}
             </button>
           </form>
-          <p className="text-center text-gray-600 text-xs mt-6">PT Palm Trade Company © {new Date().getFullYear()}</p>
+          <p className="text-center text-gray-600 text-xs mt-6">PT Putri Palma Nusantara © {new Date().getFullYear()}</p>
         </div>
       </div>
     </div>

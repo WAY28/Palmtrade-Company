@@ -3,8 +3,9 @@ import { useTranslations } from 'next-intl'
 import Image from 'next/image'
 import { CheckCircle2, Award, Users, TrendingUp, Leaf, Globe, Shield } from 'lucide-react'
 import { placeholder } from '@/lib/utils'
+import FaqSection from '@/components/sections/FaqSection'
 
-export const metadata = { title: 'About Us | PT Palm Trade Company' }
+export const metadata = { title: 'About Us | PT Putri Palma Nusantara' }
 
 function AboutPage() {
   const t = useTranslations('about')
@@ -58,6 +59,50 @@ function AboutPage() {
         </div>
       </section>
 
+      {/* Legal Data */}
+      <section className="section-padding bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+          <div className="grid lg:grid-cols-2 gap-10 items-start">
+            <div>
+              <span className="text-xs font-semibold text-brand-muted uppercase tracking-widest">— {t('legalTitle')}</span>
+              <h2 className="font-display text-2xl sm:text-3xl font-bold text-brand-dark mt-2 mb-6">{t('legalTitle')}</h2>
+              <div className="bg-white rounded-2xl border border-gray-100 overflow-hidden">
+                {[
+                  [t('legalName'), 'PT Putri Palma Nusantara'],
+                  [t('legalType'), t('legalTypeValue')],
+                  [t('legalProduct'), t('legalProductValue')],
+                  [t('legalMarkets'), 'Thailand, China, India'],
+                  [t('legalCapacity'), '± 2,800 Tons / Month'],
+                  [t('legalStandard'), t('legalStandardValue')],
+                ].map(([label, value], i) => (
+                  <div key={label} className={`flex items-center justify-between gap-4 px-6 py-3.5 text-sm ${i % 2 === 0 ? 'bg-brand-light/30' : ''}`}>
+                    <span className="text-gray-500 font-medium">{label}</span>
+                    <span className="text-brand-dark font-semibold text-right">{value}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div>
+              <span className="text-xs font-semibold text-brand-muted uppercase tracking-widest">— {t('exportCountriesTitle')}</span>
+              <h2 className="font-display text-2xl sm:text-3xl font-bold text-brand-dark mt-2 mb-6">{t('exportCountriesTitle')}</h2>
+              <div className="grid grid-cols-3 gap-4">
+                {[
+                  { flag: '🇹🇭', name: 'Thailand' },
+                  { flag: '🇨🇳', name: 'China' },
+                  { flag: '🇮🇳', name: 'India' },
+                ].map((c) => (
+                  <div key={c.name} className="bg-white rounded-2xl border border-gray-100 card-hover text-center py-6">
+                    <span className="text-4xl block mb-2">{c.flag}</span>
+                    <span className="text-sm font-semibold text-brand-dark">{c.name}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Values */}
       <section className="section-padding bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
@@ -96,6 +141,8 @@ function AboutPage() {
           </div>
         </div>
       </section>
+
+      <FaqSection />
     </>
   )
 }

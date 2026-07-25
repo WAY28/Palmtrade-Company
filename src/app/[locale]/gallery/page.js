@@ -5,7 +5,7 @@ import { createAdminClient } from '@/lib/supabaseServer'
 import { placeholder } from '@/lib/utils'
 
 export const revalidate = 60
-export const metadata = { title: 'Gallery | PT Palm Trade Company' }
+export const metadata = { title: 'Gallery | PT Putri Palma Nusantara' }
 
 export default async function GalleryPage() {
   const t = await getTranslations('gallery')

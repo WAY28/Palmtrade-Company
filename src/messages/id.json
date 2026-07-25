@@ -13,7 +13,7 @@
     "title": "Pemasok Kelapa",
     "titleHighlight": "Semi Husked",
     "titleEnd": "Terpercaya",
-    "subtitle": "PT Palm Trade Company mengekspor kelapa berkualitas ekspor dari Indonesia ke pasar Thailand, China, dan India dengan standar internasional.",
+    "subtitle": "PT Putri Palma Nusantara mengekspor kelapa berkualitas ekspor dari Indonesia ke pasar Thailand, China, dan India dengan standar internasional.",
     "ctaPrimary": "Lihat Produk Kami",
     "ctaSecondary": "Hubungi Kami",
     "stat1": "Ton/Bulan",
@@ -23,10 +23,16 @@
     "stat2Label": "Pasar Ekspor",
     "stat3Label": "Pengalaman"
   },
+  "trust": {
+    "item1": "Bersertifikat Ekspor",
+    "item2": "100% Kelapa Alami",
+    "item3": "Kualitas Terjamin",
+    "item4": "Mitra Global Terpercaya"
+  },
   "about": {
     "badge": "Tentang Kami",
     "title": "Mitra Ekspor Kelapa Anda dari Indonesia",
-    "description1": "PT Palm Trade Company adalah eksportir kelapa Indonesia yang mengkhususkan diri dalam pasokan kelapa semi husked untuk pasar internasional termasuk Thailand, China, dan India.",
+    "description1": "PT Putri Palma Nusantara adalah eksportir kelapa Indonesia yang mengkhususkan diri dalam pasokan kelapa semi husked untuk pasar internasional termasuk Thailand, China, dan India.",
     "description2": "Kami bekerja sama erat dengan komunitas petani dan menerapkan kontrol kualitas terstruktur untuk memastikan produk berkualitas ekspor di setiap pengiriman.",
     "description3": "Tujuan kami adalah memberikan kualitas yang terpercaya, komunikasi yang transparan, dan proses ekspor yang lancar bagi pembeli global kami.",
     "stat1": "Klien Dipercaya",
@@ -36,7 +42,18 @@
     "feature1": "Quality Control Ketat",
     "feature2": "Dokumen Ekspor Lengkap",
     "feature3": "Kapasitas Stabil",
-    "feature4": "Mitra Petani Lokal"
+    "feature4": "Mitra Petani Lokal",
+    "legalTitle": "Data Legal Perusahaan",
+    "legalName": "Nama Perusahaan",
+    "legalType": "Jenis Usaha",
+    "legalTypeValue": "Eksportir & Produsen Kelapa",
+    "legalProduct": "Produk Utama",
+    "legalProductValue": "Kelapa Semi Husked",
+    "legalMarkets": "Pasar Ekspor",
+    "legalCapacity": "Kapasitas Produksi",
+    "legalStandard": "Standar",
+    "legalStandardValue": "Kualitas Ekspor, Standar Internasional",
+    "exportCountriesTitle": "Negara Tujuan Ekspor Kami"
   },
   "products": {
     "badge": "Produk Kami",
@@ -69,7 +86,14 @@
     "exportReady": "Siap Ekspor",
     "exportGradeLabel": "Kelapa Semi Husked — Kualitas Ekspor",
     "emptyTitle": "Belum ada produk",
-    "emptyHint": "Tambahkan produk melalui panel admin"
+    "emptyHint": "Tambahkan produk melalui panel admin",
+    "detailInfoTitle": "Informasi Detail",
+    "moqLabel": "MOQ",
+    "moqValue": "1 x Kontainer 20ft",
+    "paymentLabel": "Syarat Pembayaran",
+    "paymentValue": "Telegraphic Transfer (T/T)",
+    "shipmentLabel": "Syarat Pengiriman",
+    "shipmentValue": "Freight On Board (FOB)"
   },
   "gallery": {
     "badge": "Galeri",
@@ -101,6 +125,26 @@
     "emptyTitle": "Belum ada data tim",
     "emptyHint": "Tambahkan anggota tim melalui panel admin"
   },
+  "faq": {
+    "badge": "FAQ",
+    "title": "Pertanyaan yang Sering Diajukan",
+    "q1": "Berapa jumlah minimum pemesanan (MOQ)?",
+    "a1": "MOQ standar kami mulai dari satu kontainer 20 kaki, dengan volume lebih besar tersedia untuk pembeli reguler. Hubungi kami untuk penawaran sesuai kebutuhan Anda.",
+    "q2": "Bagaimana syarat pembayarannya?",
+    "a2": "Kami menerima Telegraphic Transfer (T/T), biasanya berupa pembayaran uang muka sebagian dengan pelunasan sebelum atau saat pengiriman.",
+    "q3": "Bagaimana syarat pengirimannya?",
+    "a3": "Kami mengirim dengan syarat Freight On Board (FOB) dari pelabuhan Indonesia, dan dapat mengatur skema CIF untuk tujuan tertentu atas permintaan.",
+    "q4": "Bisakah saya minta sampel produk?",
+    "a4": "Bisa. Sampel dapat diatur untuk calon pembeli yang serius. Silakan hubungi kami via WhatsApp atau formulir di bawah untuk mendiskusikan permintaan sampel.",
+    "q5": "Apakah dokumen ekspor disediakan lengkap?",
+    "a5": "Ya. Setiap pengiriman disertai Phytosanitary Certificate, Certificate of Origin, Commercial Invoice, Packing List, dan Bill of Lading.",
+    "q6": "Berapa kapasitas produksi Anda?",
+    "a6": "Kami menjaga kapasitas pasokan stabil sekitar 2.800 ton per bulan ke seluruh pasar ekspor kami.",
+    "q7": "Ke negara mana saja Anda mengekspor saat ini?",
+    "a7": "Saat ini kami mengekspor ke Thailand, China, dan India, dengan kualitas dan kemasan yang disesuaikan kebutuhan tiap pasar.",
+    "q8": "Bagaimana cara melakukan pemesanan?",
+    "a8": "Hubungi kami via WhatsApp atau formulir kontak dengan kebutuhan Anda, tim kami akan memandu proses penawaran, sampel, hingga jadwal pengiriman."
+  },
   "contact": {
     "badge": "Hubungi Kami",
     "title": "Mari Berdiskusi",
@@ -126,7 +170,7 @@
     "messagePlaceholder": "Tuliskan pesan atau pertanyaan Anda..."
   },
   "footer": {
-    "description": "PT Palm Trade Company adalah eksportir kelapa semi husked terpercaya dari Indonesia untuk pasar global.",
+    "description": "PT Putri Palma Nusantara adalah eksportir kelapa semi husked terpercaya dari Indonesia untuk pasar global.",
     "quickLinks": "Tautan Cepat",
     "products": "Produk",
     "contact": "Kontak",

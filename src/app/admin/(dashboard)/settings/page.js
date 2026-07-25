@@ -153,12 +153,12 @@ export default function SettingsPage() {
 
         {/* ── Tentang Kami ── */}
         <SectionCard icon={Info} title="Tentang Kami" color="blue">
-          <Field label="Judul (ID)" name="about_title_id" value={settings.about_title_id} onChange={handle} placeholder="Tentang PT Palm Trade" />
-          <Field label="Judul (EN)" name="about_title_en" value={settings.about_title_en} onChange={handle} placeholder="About PT Palm Trade" />
+          <Field label="Judul (ID)" name="about_title_id" value={settings.about_title_id} onChange={handle} placeholder="Tentang PT Putri Palma Nusantara" />
+          <Field label="Judul (EN)" name="about_title_en" value={settings.about_title_en} onChange={handle} placeholder="About PT Putri Palma Nusantara" />
           <Field label="Deskripsi (ID)" name="about_desc_id" value={settings.about_desc_id} onChange={handle} type="textarea"
-            placeholder="PT Palm Trade Company adalah eksportir kelapa..." />
+            placeholder="PT Putri Palma Nusantara adalah eksportir kelapa..." />
           <Field label="Deskripsi (EN)" name="about_desc_en" value={settings.about_desc_en} onChange={handle} type="textarea"
-            placeholder="PT Palm Trade Company is a coconut exporter..." />
+            placeholder="PT Putri Palma Nusantara is a coconut exporter..." />
           <Field label="Stat 1 — Nilai" name="about_stat1_value" value={settings.about_stat1_value} onChange={handle} placeholder="50+" />
           <Field label="Stat 1 — Label (ID)" name="about_stat1_label_id" value={settings.about_stat1_label_id} onChange={handle} placeholder="Mitra Bisnis" />
           <Field label="Stat 2 — Nilai" name="about_stat2_value" value={settings.about_stat2_value} onChange={handle} placeholder="200+" />
@@ -223,7 +223,7 @@ export default function SettingsPage() {
 
         {/* ── SEO / Global ── */}
         <SectionCard icon={Globe} title="SEO & Info Global" color="blue">
-          <Field label="Nama Perusahaan" name="company_name" value={settings.company_name} onChange={handle} placeholder="PT Palm Trade Company" />
+          <Field label="Nama Perusahaan" name="company_name" value={settings.company_name} onChange={handle} placeholder="PT Putri Palma Nusantara" />
           <Field label="Tagline (ID)" name="company_tagline_id" value={settings.company_tagline_id} onChange={handle} placeholder="Eksportir Kelapa Terpercaya" />
           <Field label="Tagline (EN)" name="company_tagline_en" value={settings.company_tagline_en} onChange={handle} placeholder="Trusted Coconut Exporter" />
           <Field label="Meta Description (ID)" name="meta_desc_id" value={settings.meta_desc_id} onChange={handle} type="textarea" />

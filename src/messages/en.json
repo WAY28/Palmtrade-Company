@@ -13,7 +13,7 @@
     "title": "Trusted",
     "titleHighlight": "Semi Husked Coconut",
     "titleEnd": "Supplier",
-    "subtitle": "PT Palm Trade Company exports premium coconuts from Indonesia to Thailand, China, and India markets with international standards.",
+    "subtitle": "PT Putri Palma Nusantara exports premium coconuts from Indonesia to Thailand, China, and India markets with international standards.",
     "ctaPrimary": "View Our Products",
     "ctaSecondary": "Contact Us",
     "stat1": "Tons/Month",
@@ -23,10 +23,16 @@
     "stat2Label": "Export Markets",
     "stat3Label": "Experience"
   },
+  "trust": {
+    "item1": "Export Certified",
+    "item2": "100% Natural Coconut",
+    "item3": "Quality Assured",
+    "item4": "Trusted Global Partner"
+  },
   "about": {
     "badge": "About Us",
     "title": "Your Coconut Export Partner from Indonesia",
-    "description1": "PT Palm Trade Company is an Indonesian coconut exporter specializing in semi husked coconut supply for international markets including Thailand, China, and India.",
+    "description1": "PT Putri Palma Nusantara is an Indonesian coconut exporter specializing in semi husked coconut supply for international markets including Thailand, China, and India.",
     "description2": "We work closely with farmer communities and apply structured quality control to ensure export-grade products in every shipment.",
     "description3": "Our goal is to deliver dependable quality, transparent communication, and smooth export processes for our global buyers.",
     "stat1": "Trusted Clients",
@@ -36,7 +42,18 @@
     "feature1": "Strict Quality Control",
     "feature2": "Complete Export Documents",
     "feature3": "Stable Supply Capacity",
-    "feature4": "Local Farmer Partners"
+    "feature4": "Local Farmer Partners",
+    "legalTitle": "Company Legal Data",
+    "legalName": "Company Name",
+    "legalType": "Business Type",
+    "legalTypeValue": "Coconut Export Manufacturer",
+    "legalProduct": "Main Product",
+    "legalProductValue": "Semi Husked Coconut",
+    "legalMarkets": "Export Markets",
+    "legalCapacity": "Production Capacity",
+    "legalStandard": "Standard",
+    "legalStandardValue": "Export Grade, International Standard",
+    "exportCountriesTitle": "Countries We Export To"
   },
   "products": {
     "badge": "Our Products",
@@ -69,7 +86,14 @@
     "exportReady": "Export Ready",
     "exportGradeLabel": "Semi Husked Coconut — Export Grade",
     "emptyTitle": "No products yet",
-    "emptyHint": "Add products via the admin panel"
+    "emptyHint": "Add products via the admin panel",
+    "detailInfoTitle": "Detail Information",
+    "moqLabel": "MOQ",
+    "moqValue": "1 x 20ft Container",
+    "paymentLabel": "Payment Terms",
+    "paymentValue": "Telegraphic Transfer (T/T)",
+    "shipmentLabel": "Shipment Terms",
+    "shipmentValue": "Freight On Board (FOB)"
   },
   "gallery": {
     "badge": "Gallery",
@@ -101,6 +125,26 @@
     "emptyTitle": "No team members yet",
     "emptyHint": "Add team members via the admin panel"
   },
+  "faq": {
+    "badge": "FAQ",
+    "title": "Frequently Asked Questions",
+    "q1": "What is your minimum order quantity (MOQ)?",
+    "a1": "Our standard MOQ starts from one 20-foot container, with larger volumes available for regular buyers. Contact us for a quotation tailored to your needs.",
+    "q2": "What are your payment terms?",
+    "a2": "We accept Telegraphic Transfer (T/T), typically structured as a partial advance payment with the balance settled before or upon shipment.",
+    "q3": "What are your shipment terms?",
+    "a3": "We ship under Freight On Board (FOB) terms from Indonesian ports, and can coordinate CIF arrangements for select destinations upon request.",
+    "q4": "Can I request a product sample?",
+    "a4": "Yes, samples can be arranged for serious buyers. Please contact us via WhatsApp or the form below to discuss sample requests.",
+    "q5": "Do you provide complete export documentation?",
+    "a5": "Yes. Every shipment includes a Phytosanitary Certificate, Certificate of Origin, Commercial Invoice, Packing List, and Bill of Lading.",
+    "q6": "What is your production capacity?",
+    "a6": "We maintain a stable supply capacity of approximately 2,800 tons per month across our export markets.",
+    "q7": "Which countries do you currently export to?",
+    "a7": "We currently export to Thailand, China, and India, with quality and packaging tailored to each market's requirements.",
+    "q8": "How can I place an order?",
+    "a8": "Reach out via WhatsApp or our contact form with your requirements, and our team will guide you through quotation, sampling, and shipment scheduling."
+  },
   "contact": {
     "badge": "Contact Us",
     "title": "Let's Talk Business",
@@ -126,7 +170,7 @@
     "messagePlaceholder": "Write your message or inquiry..."
   },
   "footer": {
-    "description": "PT Palm Trade Company is a trusted semi husked coconut exporter from Indonesia for global markets.",
+    "description": "PT Putri Palma Nusantara is a trusted semi husked coconut exporter from Indonesia for global markets.",
     "quickLinks": "Quick Links",
     "products": "Products",
     "contact": "Contact",

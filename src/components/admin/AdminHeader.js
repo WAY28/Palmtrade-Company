@@ -26,7 +26,7 @@ export default function AdminHeader({ onMenuClick = () => {} }) {
           <Menu size={18} />
         </button>
         <div className="min-w-0">
-          <p className="text-xs text-gray-400 uppercase tracking-wider truncate">PT Palm Trade Company</p>
+          <p className="text-xs text-gray-400 uppercase tracking-wider truncate">PT Putri Palma Nusantara</p>
           <p className="text-gray-800 font-semibold text-sm">Admin Dashboard</p>
         </div>
       </div>

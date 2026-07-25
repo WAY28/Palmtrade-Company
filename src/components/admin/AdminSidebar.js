@@ -39,7 +39,7 @@ export default function AdminSidebar({ open = false, onClose = () => {} }) {
               <Leaf size={16} className="text-brand-dark" />
             </div>
             <div>
-              <p className="text-white font-bold text-sm leading-none">Palm Trade</p>
+              <p className="text-white font-bold text-sm leading-none">Putri Palma</p>
               <p className="text-brand-green text-[10px] uppercase tracking-widest">Admin Panel</p>
             </div>
           </div>

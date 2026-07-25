@@ -33,7 +33,7 @@ export default function AboutSection() {
             <div className="relative rounded-3xl overflow-hidden aspect-[4/3] group shadow-xl shadow-brand-green/10">
               <Image
                 src={placeholder(800, 600, 'Coconut+Farm')}
-                alt="Palm Trade Company"
+                alt="Putri Palma Nusantara"
                 fill
                 className="object-cover transition-transform duration-700 group-hover:scale-105"
               />

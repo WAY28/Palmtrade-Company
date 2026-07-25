@@ -34,10 +34,10 @@ export default function Footer() {
               </div>
               <div>
                 <span className="font-display font-bold text-xl text-white block leading-none">
-                  Palm Trade
+                  Putri Palma
                 </span>
                 <span className="text-[10px] text-brand-green font-medium tracking-widest uppercase">
-                  Company
+                  Nusantara
                 </span>
               </div>
             </div>
@@ -53,11 +53,11 @@ export default function Footer() {
                 +62 822-9380-7717
               </a>
               <a
-                href="mailto:info@palmtradecompany.com"
+                href="mailto:info@putripalmanusantara.com"
                 className="flex items-center gap-2 hover:text-brand-green transition-colors"
               >
                 <Mail size={14} />
-                info@palmtradecompany.com
+                info@putripalmanusantara.com
               </a>
               <span className="flex items-center gap-2">
                 <MapPin size={14} />
@@ -158,7 +158,7 @@ export default function Footer() {
       {/* Bottom bar */}
       <div className="border-t border-white/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 py-5 pb-24 sm:pb-5 sm:pr-24 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-gray-500">
-          <span>© {new Date().getFullYear()} PT Palm Trade Company. {t('rights')}</span>
+          <span>© {new Date().getFullYear()} PT Putri Palma Nusantara. {t('rights')}</span>
           <Link href="#" className="hover:text-brand-green transition-colors">
             {t('privacy')}
           </Link>

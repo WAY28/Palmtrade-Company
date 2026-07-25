@@ -4,7 +4,7 @@ import ContactSection from '@/components/sections/ContactSection'
 import Image from 'next/image'
 import { placeholder } from '@/lib/utils'
 
-export const metadata = { title: 'Contact Us | PT Palm Trade Company' }
+export const metadata = { title: 'Contact Us | PT Putri Palma Nusantara' }
 
 export default async function ContactPage() {
   const t = await getTranslations('contact')

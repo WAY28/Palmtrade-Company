@@ -1,5 +1,6 @@
 import { createAdminClient } from '@/lib/supabaseServer'
 import HeroSection from '@/components/sections/HeroSection'
+import TrustBadges from '@/components/sections/TrustBadges'
 import AboutSection from '@/components/sections/AboutSection'
 import ProductsSection from '@/components/sections/ProductsSection'
 import GallerySection from '@/components/sections/GallerySection'
@@ -10,7 +11,7 @@ import ContactSection from '@/components/sections/ContactSection'
 export const revalidate = 60
 
 export const metadata = {
-  title: 'PT Palm Trade Company | Indonesian Coconut Exporter',
+  title: 'PT Putri Palma Nusantara | Indonesian Coconut Exporter',
   description: 'Trusted semi husked coconut exporter from Indonesia for Thailand, China, and India markets.',
 }
 
@@ -33,6 +34,7 @@ export default async function HomePage() {
   return (
     <>
       <HeroSection />
+      <TrustBadges />
       <AboutSection />
       <ProductsSection products={products} />
       <GallerySection images={gallery} />

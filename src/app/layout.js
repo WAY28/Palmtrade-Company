@@ -1,8 +1,8 @@
 import './globals.css'
 
 export const metadata = {
-  title: 'PT Palm Trade Company | Indonesian Coconut Exporter',
-  description: 'PT Palm Trade Company is a trusted Indonesian coconut exporter specializing in semi husked coconut supply for Thailand, China, and India markets.',
+  title: 'PT Putri Palma Nusantara | Indonesian Coconut Exporter',
+  description: 'PT Putri Palma Nusantara is a trusted Indonesian coconut exporter specializing in semi husked coconut supply for Thailand, China, and India markets.',
 }
 
 export default function RootLayout({ children }) {

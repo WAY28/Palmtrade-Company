@@ -58,7 +58,7 @@ export default function ContactSection({ standalone = false }) {
             <div className="flex flex-col gap-6">
               {/* WhatsApp */}
               <a
-                href={getWhatsAppLink("Hello PT Palm Trade Company, I'm interested in your coconut products.")}
+                href={getWhatsAppLink("Hello PT Putri Palma Nusantara, I'm interested in your coconut products.")}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-4 p-5 bg-white/5 border border-white/10 rounded-2xl hover:border-brand-green/50 hover:bg-white/10 transition-all group"
@@ -90,7 +90,7 @@ export default function ContactSection({ standalone = false }) {
                 </div>
                 <div>
                   <p className="text-gray-400 text-xs uppercase tracking-wider mb-1">{t('emailLabel')}</p>
-                  <p className="text-white font-semibold">info@palmtradecompany.com</p>
+                  <p className="text-white font-semibold">info@putripalmanusantara.com</p>
                 </div>
               </div>
 
@@ -103,6 +103,17 @@ export default function ContactSection({ standalone = false }) {
                   <p className="text-gray-400 text-xs uppercase tracking-wider mb-1">{t('address')}</p>
                   <p className="text-white font-semibold">{t('addressValue')}</p>
                 </div>
+              </div>
+
+              {/* Map */}
+              <div className="rounded-2xl overflow-hidden border border-white/10 h-56">
+                <iframe
+                  title="Location map"
+                  src="https://www.google.com/maps?q=Indonesia&output=embed"
+                  className="w-full h-full grayscale invert-[0.9] contrast-[0.9]"
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                />
               </div>
             </div>
           </Reveal>
